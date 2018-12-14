@@ -35,6 +35,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -59,6 +60,13 @@ import co.tinode.tinodesdk.Topic;
 import co.tinode.tinodesdk.model.Drafty;
 import co.tinode.tinodesdk.model.MsgServerCtrl;
 import co.tinode.tinodesdk.model.ServerMessage;
+
+// added by Soomin for STT
+import java.util.ArrayList;
+import java.util.Locale;
+
+import android.speech.RecognizerIntent;
+
 
 import static android.app.Activity.RESULT_OK;
 
@@ -96,6 +104,11 @@ public class MessagesFragment extends Fragment
 
     private PromisedReply.FailureListener<ServerMessage> mFailureListener;
 
+    // for STT
+    private TextView txtSpeechInput;
+    private ImageButton btnSpeak;
+    private final int REQ_CODE_SPEECH_INPUT = 500;
+
     public MessagesFragment() {
     }
 
@@ -115,6 +128,10 @@ public class MessagesFragment extends Fragment
         super.onActivityCreated(savedInstance);
 
         final MessageActivity activity = (MessageActivity) getActivity();
+
+        // for STT
+        txtSpeechInput = getActivity().findViewById(R.id.editMessage);
+        btnSpeak = getActivity().findViewById(R.id.microphone);
 
         mMessageViewLayoutManager = new LinearLayoutManager(activity) {
             @Override
@@ -182,6 +199,7 @@ public class MessagesFragment extends Fragment
             @Override
             public void onClick(View v) {
                 sendText();
+                txtSpeechInput.setText("");
             }
         });
 
@@ -200,6 +218,15 @@ public class MessagesFragment extends Fragment
                 openFileSelector("*/*", R.string.select_file, ACTION_ATTACH_FILE);
             }
         });
+
+        // SST button
+        btnSpeak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                promptSpeechInput();
+            }
+        });
+
 
         EditText editor = activity.findViewById(R.id.editMessage);
         // Send message on Enter
@@ -231,6 +258,24 @@ public class MessagesFragment extends Fragment
             }
         });
     }
+
+    // for STT ftns
+    private void promptSpeechInput() {
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT,
+                getString(R.string.speech_prompt));
+        try {
+            startActivityForResult(intent, REQ_CODE_SPEECH_INPUT);
+        } catch (ActivityNotFoundException a) {
+            Toast.makeText(getContext(),
+                    getString(R.string.speech_not_supported),
+                    Toast.LENGTH_SHORT).show();
+        }
+    }
+    // ~for SST ftns
 
     @Override
     @SuppressWarnings("unchecked")
@@ -383,6 +428,20 @@ public class MessagesFragment extends Fragment
 
                     break;
                 }
+
+                /**
+                 * Receiving speech input
+                 * */
+                case REQ_CODE_SPEECH_INPUT: {
+                    if (resultCode == RESULT_OK && null != data) {
+
+                        ArrayList<String> result = data
+                                .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                        //((TextView) activity.findViewById(R.id.editMessage)).setText(TextUtils.isEmpty(mMessageToSend) ? "" : mMessageToSend);
+                        txtSpeechInput.setText(result.get(0));
+                    }
+                    break;
+                }
             }
         }
         super.onActivityResult(requestCode, resultCode, data);
@@ -407,7 +466,7 @@ public class MessagesFragment extends Fragment
         if (!message.equals("")) {
             if (sendMessage(Drafty.parse(message))) {
                 // Message is successfully queued, clear text from the input field and redraw the list.
-                inputField.setText("");
+                //inputField.setText("");
             }
         }
     }
@@ -447,7 +506,7 @@ public class MessagesFragment extends Fragment
         }
 
         if (mTopic.getAccessMode().isWriter()) {
-            ((TextView) activity.findViewById(R.id.editMessage)).setText(TextUtils.isEmpty(mMessageToSend) ? "" : mMessageToSend);
+           // ((TextView) activity.findViewById(R.id.editMessage)).setText(TextUtils.isEmpty(mMessageToSend) ? "" : mMessageToSend);
             activity.findViewById(R.id.sendMessagePanel).setVisibility(View.VISIBLE);
             activity.findViewById(R.id.sendMessageDisabled).setVisibility(View.GONE);
             mMessageToSend = null;
