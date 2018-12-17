@@ -118,7 +118,7 @@
     <string name="failed_to_create_topic">Failed to create topic</string>
     <string name="add_members">대화 상대 추가</string>
     <string name="leave_group">채팅방 나가기</string>
-    <string name="address">Address</string>
+    <string name="address">주소</string>
     <string name="topic_muted">조용히</string>
     <string name="permissions">Permissions</string>
     <string name="close">닫기</string>
