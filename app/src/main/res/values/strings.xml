@@ -28,7 +28,7 @@
     <string name="upload_avatar">프로필 사진을 등록하세요</string>
     <string name="continue_fb">페이스북으로 계속하기</string>
     <string name="continue_goog">구글로 계속하기</string>
-    <string name="or">OR</string>
+    <string name="or">OjjR</string>
     <string name="action_cancel">취소</string>
     <string name="transport_default">기본값</string>
     <string name="transport_websocket" translatable="false">websocket</string>
