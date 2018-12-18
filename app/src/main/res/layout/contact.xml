@@ -1,86 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_height="128dp"
     android:background="?android:attr/activatedBackgroundIndicator"
-    android:paddingBottom="2dp"
     android:paddingLeft="4dp"
+    android:paddingTop="2dp"
     android:paddingRight="4dp"
-    android:paddingTop="2dp">
+    android:paddingBottom="2dp">
 
     <RelativeLayout
-        android:layout_width="48sp"
-        android:layout_height="48sp"
-        android:layout_marginRight="5dp"
-        android:layout_marginEnd="5dp">
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp">
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/avatar"
-            android:layout_width="48sp"
-            android:layout_height="48sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
             app:srcCompat="@drawable/ic_person_circle" />
 
         <ImageView
             android:id="@+id/online"
-            android:layout_width="16sp"
-            android:layout_height="16sp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:layout_alignParentEnd="true"
-            app:srcCompat="@drawable/ic_circle"
-            />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/ic_circle" />
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/contactName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="start"
                 android:maxLines="1"
-                android:paddingEnd="16sp" tools:ignore="RtlSymmetry"
+                android:paddingEnd="16sp"
                 android:paddingRight="16sp"
-                tools:text="Contact title"
                 android:textAppearance="@style/contactListTextPrimary"
-                />
+                android:textSize="35sp"
+                tools:ignore="RtlSymmetry"
+                tools:text="Contact title" />
 
             <TextView
                 android:id="@+id/unreadCount"
-                android:layout_width="20sp"
-                android:layout_height="20sp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="end|center_vertical"
                 android:background="@drawable/pill_counter"
-                android:padding="3dp"
-                tools:text="9+"
                 android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="10sp" tools:ignore="SmallSp"
-                android:textStyle="bold"/>
+                android:padding="3dp"
+                android:textColor="@color/연락혀대표"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:background="@color/연락혀부대표"
+                tools:ignore="SmallSp"
+                tools:text="9+" />
 
         </LinearLayout>
 
-        <TextView android:id="@+id/contactPriv"
+        <TextView
+            android:id="@+id/contactPriv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:ellipsize="end"
-            android:maxLines="1"
             android:maxWidth="240sp"
+            android:maxLines="1"
             android:text=""
             android:textAppearance="?android:textAppearanceSmall"
+            android:textSize="30sp"
             tools:text="Contact private: Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
 
     </LinearLayout>

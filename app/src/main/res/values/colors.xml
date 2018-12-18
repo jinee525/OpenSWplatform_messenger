@@ -94,5 +94,7 @@
         <item>#D84315</item>
     </array>
     <color name="letter_tile_text_color_dark">#dedede</color>
+    <color name="연락혀대표">#f35645</color>
+    <color name="연락혀부대표">#ffcbb6</color>
 
 </resources>

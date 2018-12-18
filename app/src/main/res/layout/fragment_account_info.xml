@@ -65,11 +65,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
-                        android:layout_toLeftOf="@id/imageAvatar"
                         android:layout_toStartOf="@id/imageAvatar"
+                        android:layout_toLeftOf="@id/imageAvatar"
                         android:maxLines="2"
                         android:textIsSelectable="true"
-                        tools:text="User name"/>
+                        android:textSize="40sp"
+                        tools:text="사용자 이름" />
 
                     <TextView
                         android:id="@+id/topicSubtitle"
@@ -80,7 +81,8 @@
                         android:ellipsize="end"
                         android:maxLines="1"
                         android:textIsSelectable="true"
-                        tools:text="Not sure what this should be"/>
+                        android:textSize="25sp"
+                        tools:text="상태메세지" />
 
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -188,11 +190,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/change_password"
+                            android:drawableStart="@drawable/ic_lock_outline"
                             android:drawableLeft="@drawable/ic_lock_outline"
                             android:drawablePadding="4sp"
-                            android:drawableStart="@drawable/ic_lock_outline"
                             android:text="@string/change_password"
-                            android:textColor="@color/colorTextPrimary"/>
+                            android:textColor="@color/colorTextPrimary" />
 
                         <Button
                             android:id="@+id/buttonLogout"

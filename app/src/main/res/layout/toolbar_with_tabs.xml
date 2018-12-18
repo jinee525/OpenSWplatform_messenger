@@ -26,19 +26,21 @@
     <android.support.design.widget.TabLayout
         android:id="@+id/tabsContacts"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/연락혀대표"
+        app:tabIndicatorHeight="10dp">
 
         <android.support.design.widget.TabItem
             android:id="@+id/tab_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/chats"/>
+            android:text="@string/chats" />
 
         <android.support.design.widget.TabItem
             android:id="@+id/tab_contacts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/contacts"/>
+            android:text="@string/contacts" />
 
     </android.support.design.widget.TabLayout>
 

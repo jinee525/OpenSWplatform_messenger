@@ -3,34 +3,34 @@
     <string name="tinode_url" translatable="false">https://github.com/tinode/</string>
     <string name="default_host_name" translatable="false">10.0.2.2:6060</string>
 
-    <string name="app_name" translatable="false">Tindroid</string>
-    <string name="app_name_full" translatable="false">Tindroid Messenger</string>
+    <string name="app_name" translatable="false">연락혀</string>
+    <string name="app_name_full" translatable="false">연락혀</string>
     <string name="app_version">Version</string>
-    <string name="copyright" translatable="false">© 2014 – 2018 Tinode</string>
-    <string name="tinode" translatable="false">Tinode</string>
+    <string name="copyright" translatable="false">© 2018 tindroid-연락혀</string>
+    <string name="tinode" translatable="false">TEAM9</string>
 
-    <string name="login_hint">Login</string>
-    <string name="password_hint">Password</string>
-    <string name="new_message_hint">Type a message</string>
-    <string name="send_message_button_hint">Send message</string>
-    <string name="send_image_button_hint">Send image</string>
-    <string name="send_file_button_hint">Send file</string>
+    <string name="login_hint">아이디</string>
+    <string name="password_hint">비밀번호</string>
+    <string name="new_message_hint">메세지를 입력하세요</string>
+    <string name="send_message_button_hint">메세지 보내기</string>
+    <string name="send_image_button_hint">사진 보내기</string>
+    <string name="send_file_button_hint">파일 보내기</string>
 
-    <string name="sign_in">Sign In</string>
-    <string name="app_description" translatable="false">Tinode Demo Chat</string>
-    <string name="action_signup">Sign Up</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="login_new">Login</string>
-    <string name="password_new">Password</string>
-    <string name="password_repeat">Repeat password</string>
-    <string name="full_name">Full name, e.g. John Doe</string>
-    <string name="tinode_logo" translatable="false">Tinode Logo</string>
-    <string name="upload_avatar">Upload avatar picture</string>
-    <string name="continue_fb">Continue with Facebook</string>
-    <string name="continue_goog">Continue with Google</string>
+    <string name="sign_in">로그인!</string>
+    <string name="app_description" translatable="false">친구야, 연락혀!</string>
+    <string name="action_signup">로그인</string>
+    <string name="sign_up">로그인</string>
+    <string name="login_new">아이디</string>
+    <string name="password_new">비밀번호</string>
+    <string name="password_repeat">비밀번호를 한번 더 입력하세요</string>
+    <string name="full_name">김영자</string>
+    <string name="tinode_logo" translatable="false">연락혀 로고</string>
+    <string name="upload_avatar">프로필 사진을 등록하세요</string>
+    <string name="continue_fb">페이스북으로 계속하기</string>
+    <string name="continue_goog">구글로 계속하기</string>
     <string name="or">OR</string>
-    <string name="action_cancel">Cancel</string>
-    <string name="transport_default">default</string>
+    <string name="action_cancel">취소</string>
+    <string name="transport_default">기본값</string>
     <string name="transport_websocket" translatable="false">websocket</string>
     <string name="transport_long_polling" translatable="false">long polling</string>
     <string name="settings_host_name">Host name</string>
@@ -56,28 +56,28 @@
     <string name="modePending">pending</string>
 
     <!-- Menu actions -->
-    <string name="action_settings">Settings</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_mute">Mute conversation</string>
-    <string name="action_edit_contact">Edit contact</string>
-    <string name="action_clear_messages">Clear messages</string>
-    <string name="action_view_contact">View contact</string>
-    <string name="action_attach">Attach</string>
-    <string name="action_new_chat">New chat</string>
-    <string name="action_new_group">New group chat</string>
+    <string name="action_settings">세팅</string>
+    <string name="action_delete">삭제</string>
+    <string name="action_mute">음소거</string>
+    <string name="action_edit_contact">연락처 수정</string>
+    <string name="action_clear_messages">메세지 삭제</string>
+    <string name="action_view_contact">친구 목록 보기</string>
+    <string name="action_attach">붙임</string>
+    <string name="action_new_chat">새로운 대화</string>
+    <string name="action_new_group">새로운 단체 대화</string>
     <string name="action_start_by_id">Start by ID</string>
     <string name="action_about">About</string>
-    <string name="action_search">Search</string>
-    <string name="action_add_contact">Add contact</string>
+    <string name="action_search">검색</string>
+    <string name="action_add_contact">친구 추가</string>
     <string name="action_edit_topic">Edit topic</string>
-    <string name="action_send_now">Send now</string>
-    <string name="action_view_details">View details</string>
-    <string name="action_copy">Copy</string>
-    <string name="action_offline">Working offline</string>
-    <string name="action_delete_group">Delete conversation…</string>
+    <string name="action_send_now">지금 보내기</string>
+    <string name="action_view_details">상세정보 보기</string>
+    <string name="action_copy">복사</string>
+    <string name="action_offline">오프라인상태로 진행하기</string>
+    <string name="action_delete_group">대화 삭제…</string>
 
-    <string name="avatar">Avatar picture</string>
-    <string name="select_image">Select image</string>
+    <string name="avatar">프로필 사진</string>
+    <string name="select_image">사진 선택</string>
     <string name="select_file">Select file</string>
     <string name="image_is_missing">Image is missing</string>
     <string name="passwords_dont_match">Passwords don\'t match</string>
@@ -86,26 +86,26 @@
     <string name="login_required">Login required</string>
     <string name="password_required">Password required</string>
     <string name="error_new_account_failed">Account registration failed:</string>
-    <string name="no_contacts">No contacts found</string>
-    <string name="invite">Invite</string>
-    <string name="contacts">Contacts</string>
-    <string name="chats">Chats</string>
+    <string name="no_contacts">등록된 친구가 없습니다.</string>
+    <string name="invite">초대</string>
+    <string name="contacts">친구 목록</string>
+    <string name="chats">대화 목록</string>
 
     <!-- Used for the AlphabetIndexer in ContactsListFragment to provide quick navigation by
      alphabet using ListView fast scroll. -->
-    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="alphabet">A</string>
 
-    <string name="search_hint">Find contacts</string>
+    <string name="search_hint">연락처 찾기</string>
     <string name="contacts_permission_denied">Contacts not loaded: permission denied</string>
     <string name="account_already_exists">Account already exists</string>
-    <string name="pick_account">Pick Account</string>
+    <string name="pick_account">계정 선택하기</string>
     <string name="tinode_invite_subject">Check out Tindroid Messenger</string>
     <string name="tinode_invite_body">Check out Tindroid Messenger. Download it from https://github.com/tinode/</string>
 
-    <string name="profile_action">Tinode profile</string>
+    <string name="profile_action">연락혀 계정</string>
     <string name="view_profile">View Profile</string>
-    <string name="tinode_message">Send Tinode message</string>
-    <string name="failed_to_invite">Don\'t know how to invite - no contact info</string>
+    <string name="tinode_message">메세지 보내기</string>
+    <string name="failed_to_invite">존재하지 않는 계정입니다.</string>
     <string name="about_title">About</string>
     <string name="failed_to_send_message">Failed to send message</string>
     <string name="failed_to_delete_messages">Failed to delete messages</string>
@@ -162,7 +162,7 @@
     <string name="owner_cannot_unsubscribe">Owner cannot unsubscribe</string>
     <string name="read_receipts_enabled">Send read receipts</string>
     <string name="typing_notifications_enabled">Show typing notifications</string>
-    <string name="logout">Logout</string>
+    <string name="logout">로그아웃</string>
     <string name="change_password">Change password</string>
     <string name="account_settings">Account settings</string>
     <string name="enter_new_password">Enter new password</string>
@@ -188,10 +188,10 @@
     <string name="confirm">Confirm</string>
     <string name="validation_example">Numbers only</string>
     <string name="enter_confirmation_code">Enter confirmation code</string>
-    <string name="failed_credential_confirmation">Incorrect confirmation code</string>
-    <string name="addByIdHint">Enter topic or user ID</string>
+    <string name="failed_credential_confirmation">초대 코드 오류</string>
+    <string name="addByIdHint">친구를 검색하세요.</string>
     <string name="failed_empty_id">ID is required</string>
-    <string name="topic_not_found_or_invalid">Topic not found or invalid</string>
+    <string name="topic_not_found_or_invalid">존재하지 않음</string>
     <string name="sending_disabled">Not available</string>
     <string name="failed_to_download">Failed to save downloaded file</string>
     <string name="failed_to_open_file">No application can view the file of this type</string>
@@ -203,12 +203,12 @@
     <string name="login_rejected">Login rejected</string>
     <string name="email_rejected">Email rejected</string>
     <string name="invalid_confirmation_code">Invalid code</string>
-    <string name="notification_channel_name">New mesage</string>
+    <string name="notification_channel_name">새로운 메시지!</string>
     <string name="notification_channel_description">New message was received</string>
     <string name="request_pass_reset">Request password reset by %1$s:</string>
     <string name="validated_address_to_use">Validated %1$s to use</string>
     <string name="request">Request</string>
-    <string name="forgot_password">Forgot password</string>
+    <string name="forgot_password">비밀번호 찾기</string>
     <string name="enter_valid_address">Enter valid %1$s</string>
     <string name="invalid_or_unknown_credential">Invalid or unknown address</string>
     <string name="password_reset_message_sent">Message with instructions sent</string>

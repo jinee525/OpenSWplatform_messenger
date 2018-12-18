@@ -1,5 +1,6 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,23 +11,24 @@
     tools:context="co.tinode.tindroid.LoginFragment">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignParentStart="true"
         android:id="@+id/imageLogo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:contentDescription="@string/tinode_logo"/>
+        android:contentDescription="@string/tinode_logo"
+        android:src="@mipmap/ic_launcher"
+        app:srcCompat="@drawable/연락혀small" />
 
     <TextView
+        android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/app_description"
-        android:id="@+id/appTitle"
         android:layout_below="@+id/imageLogo"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/app_description"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/editLoginWrapper"
@@ -62,19 +64,22 @@
         android:id="@+id/signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in"
         android:layout_below="@+id/editPasswordWrapper"
-        android:textSize="@dimen/button_text"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in"
+        android:textColor="@color/연락혀대표"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/forgotPassword"
         style="?android:buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/forgot_password"
         android:layout_below="@+id/signIn"
         android:layout_centerHorizontal="true"
-        />
+        android:text="@string/forgot_password"
+        android:textColor="@color/연락혀대표"
+        android:textSize="30sp" />
 
 </RelativeLayout>

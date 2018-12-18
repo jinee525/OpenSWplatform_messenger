@@ -1,61 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
     android:background="?android:attr/activatedBackgroundIndicator"
     android:orientation="horizontal"
-    android:paddingBottom="2dp"
-    android:paddingTop="2dp"
     android:paddingLeft="4dp"
-    android:paddingRight="4dp">
+    android:paddingTop="2dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="2dp">
 
     <ImageView
         android:id="@android:id/icon"
-        android:layout_width="48sp"
-        android:layout_height="48sp"
-        app:srcCompat="@drawable/ic_person_circle"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="5dp" />
+        android:layout_marginRight="5dp"
+        app:srcCompat="@drawable/ic_person_circle" />
 
     <Button
         android:id="@+id/buttonInvite"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+        android:background="@color/연락혀부대표"
         android:focusable="false"
         android:text="@string/invite"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        style="@style/Widget.AppCompat.Button.Small"/>
+        android:textColor="@color/연락혀대표"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
-            android:id="@android:id/text1"
-            android:layout_toRightOf="@android:id/icon"
-            android:layout_toLeftOf="@id/buttonInvite"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:paddingEnd="16sp"
-            android:paddingRight="16sp"
-            android:layout_alignParentTop="true"
-            android:maxLines="1"
-            tools:text="Contact title"
-            android:textAppearance="@style/contactListTextPrimary"/>
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_toLeftOf="@id/buttonInvite"
+        android:layout_toRightOf="@android:id/icon"
+        android:maxLines="1"
+        android:paddingEnd="16sp"
+        android:paddingRight="16sp"
+        android:textAppearance="@style/contactListTextPrimary"
+        android:textSize="35sp"
+        tools:text="Contact title" />
 
     <TextView
-            android:id="@android:id/text2"
-            android:layout_toRightOf="@android:id/icon"
-            android:layout_toLeftOf="@id/buttonInvite"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:maxWidth="240sp"
-            android:layout_below="@android:id/text1"
-            tools:text="Dolorem ipsum quia dolor sit amet consectetur adipisci velit"
-            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        android:id="@android:id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/text1"
+        android:layout_gravity="top"
+        android:layout_toLeftOf="@id/buttonInvite"
+        android:layout_toRightOf="@android:id/icon"
+        android:ellipsize="end"
+        android:maxWidth="240sp"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="30sp"
+        tools:text="Dolorem ipsum quia dolor sit amet consectetur adipisci velit" />
 
 </RelativeLayout>
