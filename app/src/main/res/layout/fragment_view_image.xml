@@ -13,6 +13,6 @@
         android:contentDescription=""
         android:scaleType="fitCenter"
         tools:src="@drawable/logo_src"
-        tools:srcCompat="@drawable/NEWICON" />
+        tools:srcCompat="@drawable/newicon_big" />
 
 </RelativeLayout>

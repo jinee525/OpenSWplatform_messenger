@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:contentDescription="@string/tinode_logo"
         android:src="@mipmap/ic_launcher"
-        app:srcCompat="@drawable/연락혀small" />
+        app:srcCompat="@drawable/newicon_small" />
 
     <TextView
         android:id="@+id/appTitle"

@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_weight="1"
-        app:srcCompat="@drawable/NEWICON" />
+        app:srcCompat="@drawable/newicon_big" />
 
     <TextView
         android:layout_width="wrap_content"
