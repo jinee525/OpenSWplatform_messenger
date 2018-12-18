@@ -16,12 +16,12 @@
 
         <TextView
             android:id="@+id/messageText"
+            style="@style/textMetaBubble"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxWidth="200dp"
             android:textColor="@color/colorTextSecondary"
-            style="@style/textMetaBubble"
-            tools:text="Lorem ipsum"/>
+            tools:text="메세지가 없습니다." />
 
     </LinearLayout>
 </LinearLayout>

@@ -26,25 +26,26 @@
                 android:id="@+id/messageText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxWidth="280dp"
-                android:textColor="@color/colorTextPrimary"
                 android:clickable="false"
                 android:focusable="false"
-                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                android:maxWidth="280dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="30sp"
+                tools:text="내일 아침에 산책가시나요?" />
 
             <TextView
                 android:id="@+id/messageMeta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:clickable="false"
+                android:focusable="false"
                 android:paddingLeft="4dp"
                 android:paddingRight="4dp"
                 android:textColor="@color/colorTextSecondary"
-                android:textSize="11sp"
+                android:textSize="20sp"
                 tools:ignore="SmallSp"
-                android:clickable="false"
-                android:focusable="false"
-                tools:text="Jun 11 22:17"/>
+                tools:text="Jun 11 22:17" />
 
         </LinearLayout>
     </LinearLayout>
